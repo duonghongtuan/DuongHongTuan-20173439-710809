@@ -11,6 +11,10 @@ public class Order {
     private int shippingFees;
     private List lstOrderMedia;
     private HashMap<String, String> deliveryInfo;
+    protected Double weight;
+    protected Double length;
+    protected Double width;
+    protected Double height;
 
     public Order(){
         this.lstOrderMedia = new ArrayList<>();
@@ -50,6 +54,38 @@ public class Order {
 
     public void setDeliveryInfo(HashMap deliveryInfo) {
         this.deliveryInfo = deliveryInfo;
+    }
+    
+    public Double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
+
+    public Double getWidth() {
+        return width;
+    }
+
+    public void setWidth(Double width) {
+        this.width = width;
+    }
+
+    public Double getLength() {
+        return length;
+    }
+
+    public void setLength(Double length) {
+        this.length = length;
+    }
+    
+    public Double getHeight() {
+        return height;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
     }
 
     public int getAmount(){
